@@ -1,9 +1,4 @@
 <div id=D__ID>
-   <div id=vm_dev_info__ID style='position:absolute;font-size:12px;display:none'>
-      This module is located at
-      <a target=_blank href=https://codepen.io/vmiis/pen/bKgNpV>https://codepen.io/vmiis/pen/bKgNpV</a>.
-      Pre fill a test login just for development convenience.
-   </div>
    <div id=page__ID>
       <div class="container-fluid max__ID">
          <div id=panel__ID>
@@ -42,11 +37,9 @@
          $('#password__ID').val('Yj1wP7ra');
          //*****************
          //-------------------------------------
-         if($vm.server=="development") $('#vm_dev_info__ID').show();
-         //-------------------------------------
          var this_module		=$vm.module_list[$vm.vm['__ID'].name];
          var prefix				=this_module.prefix;  if(prefix==undefined) prefix="";
-         var TP      	      =prefix+this_module.TP;
+         var TP      	        =prefix+this_module.TP;
          if(TP=='bl-panel') $('#TP__ID').text("Baseline");
          else if(TP=='w1-panel') $('#TP__ID').text("Week 1");
          else if(TP=='w2-panel') $('#TP__ID').text("Week 2");
@@ -56,8 +49,9 @@
          $('#login__ID').on('click',function(){
             $('#msg__ID').hide();
             var req={
-               cmd:"app_signin",
+               cmd:"app-signin",
                db_pid:'20011505',
+               qid:$vm.qid,
                username:$('#email__ID').val(),
                password:$('#password__ID').val()
             }
@@ -66,6 +60,8 @@
                   $('#msg__ID').show();
                }
                else{
+                  $vm.participant_record={};
+                  $vm.participant_record['UID']=res.user_id;
                   var username=$('#email__ID').val();
                   $vm.online_questionnaire=1;
                   $vm.user=username;
