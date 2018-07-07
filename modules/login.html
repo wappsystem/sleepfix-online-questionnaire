@@ -37,6 +37,12 @@
          $('#password__ID').val('Yj1wP7ra');
          //*****************
          //-------------------------------------
+         $vm.nav_signout_without_reload();
+         $('#vm_signin').hide();
+         $('#vm_signout').hide();
+         $('#vm_username').html('');
+         $vm.user='';
+
          var this_module		=$vm.module_list[$vm.vm['__ID'].name];
          var prefix				=this_module.prefix;  if(prefix==undefined) prefix="";
          var TP      	        =prefix+this_module.TP;
@@ -63,12 +69,11 @@
                   $vm.participant_record={};
                   $vm.participant_record['UID']=res.user_id;
                   var username=$('#email__ID').val();
-                  $vm.online_questionnaire=1;
                   $vm.user=username;
                   $vm.user_id=res.user_id;
-                  $('#vm_system_username').text('Signed in as '+username);
-                  $('#vm_system_signin').hide();
-                  $('#vm_system_signout').show();
+                  $('#vm_username').text('Signed in as '+username);
+                  $('#vm_signin').hide();
+                  $('#vm_signout').show();
                   $VmAPI.set_token(res.token,'');
                   $vm.load_module_v2(TP,'',{username:username,user_id:res.user_id})
                }
@@ -86,8 +91,6 @@
          height:100%;
          display: flex;
          align-items: center;
-         background-image:url(https://wappsystem.github.io/sleepfix-workbench/images/sleep.jpg);
-         background-size: cover;
       }
       .max__ID{
          max-width:500px;
