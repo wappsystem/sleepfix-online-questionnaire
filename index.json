@@ -17,7 +17,26 @@
 
         "bl-questionnaire-form":    {"table_id":"20011570","url":"modules/tasks/mirror/bl-questionnaire-form.html"},
         "bl-ess-s2-f-form":         {"table_id":"20011537","url":"modules/tasks/mirror/ess-s2-f-form.html"},
-        "bl-isi-form":              {"table_id":"20011508","url":"modules/tasks/mirror/isi-form.html"}
-
+        "bl-phq9-form":             {"table_id":"20011522","url":"modules/tasks/mirror/phq9-form.html"},
+        "bl-gad7-form":             {"table_id":"20011525","url":"modules/tasks/mirror/gad7-form.html"},
+        "bl-gses-form":             {"table_id":"20011514","url":"modules/tasks/mirror/gses-form.html"},
+        "bl-hpq-form":              {"table_id":"20011540","url":"modules/tasks/mirror/hpq-form.html"},
+        "bl-bpns-form":             {"table_id":"20011543","url":"modules/tasks/mirror/bpns-form.html"},
+        "bl-acta-form":             {"table_id":"20011515","url":"modules/tasks/mirror/acta-form.html"},
+        "w1-isi-s-f-t-form":        {"table_id":"20011509","url":"modules/tasks/mirror/isi-s-f-t-form.html"},
+        "w2-isi-s-f-t-form":        {"table_id":"20011510","url":"modules/tasks/mirror/isi-s-f-t-form.html"},
+        "w3-isi-s-f-t-form":        {"table_id":"20011511","url":"modules/tasks/mirror/isi-s-f-t-form.html"},
+        "w6-isi-form":              {"table_id":"20011512","url":"modules/tasks/mirror/isi-form.html"},
+        "w6-ess-s2-f-form":            {"table_id":"20011538","url":"modules/tasks/mirror/ess-s2-f-form.html"},
+        "w6-phq9-form":             {"table_id":"20011523","url":"modules/tasks/mirror/phq9-form.html"},
+        "w6-gad7-form":             {"table_id":"20011526","url":"modules/tasks/mirror/gad7-form.html"},
+        "w6-hpq-form":              {"table_id":"20011541","url":"modules/tasks/mirror/hpq-form.html"},
+        "w6-two-item-fu-form":      {"table_id":"20011571","url":"modules/tasks/two-item-fu-form.html"},
+        "w12-isi-form":             {"table_id":"20011513","url":"modules/tasks/mirror/isi-form.html"},
+        "w12-ess-s-f-form":          {"table_id":"20011539","url":"modules/tasks/mirror/ess-s-f-form.html"},
+        "w12-phq9-form":            {"table_id":"20011524","url":"modules/tasks/mirror/phq9-form.html"},
+        "w12-gad7-form":            {"table_id":"20011527","url":"modules/tasks/mirror/gad7-form.html"},
+        "w12-hpq-form":             {"table_id":"20011542","url":"modules/tasks/mirror/hpq-form.html"},
+        "w12-bpns-form":            {"table_id":"20011544","url":"modules/tasks/mirror/bpns-form.html"}
 	}
 }
