@@ -1,6 +1,7 @@
 set S=%USERPROFILE%\Documents\GitHub\wappsystem\sleepfix-management\modules\tasks
 set D=%USERPROFILE%\Documents\GitHub\wappsystem\sleepfix-online-questionnaire\modules\tasks\mirror
 
+xcopy %S%\task-form.css %D%\task-form.css /D /Y
 xcopy %S%\task-form.js %D%\task-form.js /D /Y
 xcopy %S%\acta-form.html %D%\acta-form.html /D /Y
 xcopy %S%\bl-questionnaire-form.html %D%\bl-questionnaire-form.html /D /Y
