@@ -1,5 +1,5 @@
-<div layout-html id=layout__ID>
-    <div header id=header__ID>
+<div layout-html id=layout_0>
+    <div header id=header_0>
         <div>
             <div mobile>
                 <span module=Home id=m_title>SleepFix</span>
@@ -15,23 +15,23 @@
         </div>
     </div>
     <div content>
-        <div content-container id="content_container__ID">
-        	<div id=vm_loader class="loader__ID"></div>
+        <div content-container id="content_container_0">
+        	<div id=vm_loader class="loader_0"></div>
         </div>
     </div>
-    <div footer id=footer__ID>
-    	<span id=text__ID></span>
+    <div footer id=footer_0>
+    	<span id=text_0></span>
     </div>
 </div>
 <div system-html>
-    <div top-right-corner id=top_right_corner__ID class='d-none d-xl-block'>
+    <div top-right-corner id=top_right_corner_0 class='d-none d-xl-block'>
         <div>
             <span id=vm_username></span>
         </div>
     </div>
     <div style='position:absolute;right:20px;bottom:0'>
-        <span id=database_p__ID style='color:green'>.</span>
-        <span id=database_d__ID style='color:red'>. <span id=vm_system_info style='color:#555';></span></span>
+        <span id=database_p_0 style='color:green'>.</span>
+        <span id=database_d_0 style='color:red'>. <span id=vm_system_info style='color:#555';></span></span>
     </div>
     <div alert class="modal fade" id="vm_alert_information" tabindex="-1" role="dialog" aria-labelledby="vm_dialog" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
@@ -55,26 +55,26 @@
 <script layout-js>
     $vm.layout=function(){
 		//------------------------------------
-        $vm.root_layout_content_slot="content_container__ID";
+        $vm.root_layout_content_slot="content_container_0";
 		//------------------------------------
         var set_height=function(){
-			var header_height=$('#header__ID').outerHeight(); $vm.header_height=header_height;
-			var footer_height=$('#footer__ID').outerHeight();
+			var header_height=$('#header_0').outerHeight(); $vm.header_height=header_height;
+			var footer_height=$('#footer_0').outerHeight();
 			$vm.min_height=($(window).height()-header_height-footer_height);
-			$('#content_container__ID').css({'height':($vm.min_height)+'px'});
+			$('#content_container_0').css({'height':($vm.min_height)+'px'});
 		}
 		//------------------------------------
 		set_height();window.onresize=function(){set_height();}
         //-----------------------------------------
 	}
     $vm.top_right_corner=function(){
-        if($vm.server=='development') $('#database_d__ID').show();
-        else if($vm.server=='production') $('#database_p__ID').show();
+        if($vm.server=='development') $('#database_d_0').show();
+        else if($vm.server=='production') $('#database_p_0').show();
     }
     $vm.footer=function(){
-        $vm.root_layout_footer='footer__ID';
+        $vm.root_layout_footer='footer_0';
         //-----------------------------------------------------
-        $('#text__ID').html("Copyright © "+(new Date()).getFullYear()+", SleepFix. <span id=FL__ID>Powered by Wappsystem</span>");
+        $('#text_0').html("Copyright © "+(new Date()).getFullYear()+", SleepFix. <span id=FL_0>Powered by Wappsystem</span>");
         //------------------------------------
     }
     //---------------------------------------------
@@ -120,8 +120,8 @@
         show_user();
         //---------------------------------------------
         if(window.location.hostname!='127.0.0.1'){
-            $vm.google_signin_setup('175539446682-tvqlkse9j0mt79fk70uetoq30bpnrboa.apps.googleusercontent.com','google__ID',show_user);
-            $vm.facebook_signin_setup('360182794393427','facebook__ID',show_user);
+            $vm.google_signin_setup('175539446682-tvqlkse9j0mt79fk70uetoq30bpnrboa.apps.googleusercontent.com','google_0',show_user);
+            $vm.facebook_signin_setup('360182794393427','facebook_0',show_user);
         }
         //---------------------------------------------
     }
@@ -136,7 +136,7 @@
 	}
     body{
         background-color: #004955 !important;
-        background-image: url(layout.jpg);
+        background-image: url(sys/layout.jpg);
         background-size: cover;
         background-repeat: repeat-x;
         background-position: center top;
@@ -147,7 +147,7 @@
     #vm_framework{
         height:100%;
     }
-    #layout__ID {
+    #layout_0 {
         height: 100%;
         display: grid;
         grid-template-rows: auto 1fr auto;
@@ -159,9 +159,9 @@
     }
     /*----------------------*/
     /*header*/
-    #header__ID{
+    #header_0{
         height:100px;
-        background: rgba(0,0,0,0.5);
+        background: rgba(162, 213, 203, 0.7);
     }
     #vm_logo{
         display:inline-block;
@@ -317,7 +317,7 @@
             display:block;
             float:unset;
         }
-        #header__ID{
+        #header_0{
             height:unset;
             background: rgba(0,0,0,0.3);
         }
@@ -334,7 +334,7 @@
     }
     /*----------------------*/
     /*content*/
-    #content_container__ID{
+    #content_container_0{
         position:fixed;
         width:100%;
         overflow:auto;
@@ -343,14 +343,14 @@
         display:none;
         position:absolute;
     }
-    .loader__ID {
+    .loader_0 {
       height: 4px;
       width: 100%;
       position: relative;
       overflow: hidden;
       background-color: #ddd;
     }
-    .loader__ID:before{
+    .loader_0:before{
       display: block;
       position: absolute;
       content: "";
@@ -370,7 +370,7 @@
     }
     /*----------------------*/
     /*footer*/
-    #footer__ID{
+    #footer_0{
         height:24px;
         color: #fff;
         padding: 3px;
@@ -379,13 +379,13 @@
         text-align: center;
     }
     @media screen and (max-width: 900px){
-        #FL__ID{
+        #FL_0{
             display:none;
         }
     }
     /*----------------------*/
     /*top right*/
-    #top_right_corner__ID{
+    #top_right_corner_0{
         display:block;
         position:fixed;
         top:3px;
@@ -398,10 +398,10 @@
     #vm_username{
         float:right;
     }
-    #database_d__ID{
+    #database_d_0{
         display:none;
     }
-    #database_p__ID{
+    #database_p_0{
         display:none;
     }
     /*----------------------*/

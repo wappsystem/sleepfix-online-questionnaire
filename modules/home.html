@@ -6,7 +6,9 @@
             $vm.online_questionnaire=1;
             $('#vm_system_username').text('');
             $('#vm_system_signout').hide();
+            var first=0;
             $vm.home_process=function(){
+                first=1;
                 var module="bl-login";
                 var a=window.location.href.split('TP=');
                 if(a.length==2){
@@ -23,6 +25,9 @@
                 }
                 $vm.load_module_v2(module,'',{});
             }
+            $('#D__ID').on('load',function(){
+                if(first==1) $vm.home_process();
+            })
         }
     </script>
     <style>
