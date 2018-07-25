@@ -33,7 +33,7 @@
         var status={};
         //-------------------------------------
         $('#D__ID').on('load',function(){  request_data();  })
-        $('#D__ID').on('show',function(){  if($vm.refresh==1){ $vm.refresh=0; request_data();}  })
+        $('#D__ID').on('show',function(){  alert($vm.refresh);if($vm.refresh==1){ $vm.refresh=0; request_data();}  })
         //-------------------------------------
         var request_data=function(){
             /*
