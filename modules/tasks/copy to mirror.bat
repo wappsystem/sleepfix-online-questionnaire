@@ -14,6 +14,7 @@ xcopy %S%\hpq-form.html %D%\hpq-form.html /D /Y
 xcopy %S%\isi-form.html %D%\isi-form.html /D /Y
 xcopy %S%\isi-s-f-t-form.html %D%\isi-s-f-t-form.html /D /Y
 xcopy %S%\phq9-form.html %D%\phq9-form.html /D /Y
+xcopy %S%\sp-form.html %D%\sp-form.html /D /Y
 xcopy %S%\phq8-form.html %D%\phq8-form.html /D /Y
 xcopy %S%\two-item-fu-form.html %D%\two-item-fu-form.html /D /Y
 

@@ -37,6 +37,7 @@
         "w12-phq9-form":            {"table_id":"20011524","url":"tasks/mirror/phq9-form.html"},
         "w12-gad7-form":            {"table_id":"20011527","url":"tasks/mirror/gad7-form.html"},
         "w12-hpq-form":             {"table_id":"20011542","url":"tasks/mirror/hpq-form.html"},
-        "w12-bpns-form":            {"table_id":"20011544","url":"tasks/mirror/bpns-form.html"}
+        "w12-bpns-form":            {"table_id":"20011544","url":"tasks/mirror/bpns-form.html"},
+        "sp-form":                  {"table_id":"","url":"tasks/mirror/sp-form.html"}
 	}
 }
