@@ -5,9 +5,9 @@
         function F__ID(){
             $vm.online_questionnaire=1;
             $('#vm_system_username').text('');
-            $('#vm_system_signout').hide();
+            $('#vm_signout').hide();
             var first=0;
-            $vm.home_process=function(){
+            $vm.home_process=function(){ //is called after all moduless are setup in module list
                 first=1;
                 var module="bl-login";
                 var a=window.location.href.split('TP=');
@@ -25,9 +25,9 @@
                 }
                 $vm.load_module_v2(module,'',{});
             }
-            $('#D__ID').on('load',function(){
-                if(first==1) $vm.home_process();
-            })
+            //$('#D__ID').on('load',function(){
+            //    if(first==1) $vm.home_process();
+            //})
         }
     </script>
     <style>

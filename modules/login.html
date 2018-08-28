@@ -38,7 +38,6 @@
          //*****************
          //-------------------------------------
          $vm.nav_signout_without_reload();
-         $('#vm_signin').hide();
          $('#vm_signout').hide();
          $('#vm_username').html('');
          $vm.user='';
@@ -72,8 +71,8 @@
                   $vm.user=username;
                   $vm.user_id=res.user_id;
                   $('#vm_username').text('Signed in as '+username);
-                  $('#vm_signin').hide();
                   $('#vm_signout').show();
+                  $('#vm_signout').removeClass('vm-hide');
                   $VmAPI.set_token(res.token,'');
                   $vm.load_module_v2(TP,'',{username:username,user_id:res.user_id})
                }
