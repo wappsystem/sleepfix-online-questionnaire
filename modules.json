@@ -38,6 +38,7 @@
         "w12-gad7-form":            {"table_id":"20011527","url":"https://management.sfix.com.au/modules/tasks/gad7-form.html"},
         "w12-hpq-form":             {"table_id":"20011542","url":"https://management.sfix.com.au/modules/tasks/hpq-form.html"},
         "w12-bpns-form":            {"table_id":"20011544","url":"https://management.sfix.com.au/modules/tasks/bpns-form.html"},
-        "sp-form":                  {"table_id":"","url":"https://management.sfix.com.au/modules/tasks/sp-form.html"}
+        "sp-form":                  {"table_id":"","url":"https://management.sfix.com.au/modules/tasks/sp-form.html"},
+        "sleepfix-study-page":              {"url":"https://management.sfix.com.au/modules/tasks/sleepfix-study-page.html"}
 	}
 }
