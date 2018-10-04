@@ -9,12 +9,12 @@
             </div>
             <div class='row row__ID'>
                <div class=col>
-                  <input id="email__ID" type="text" class="form-control" name="username" value="" placeholder="email">
+                  <input id="email__ID" type="text" class="form-control" name="email" value="" placeholder="email">
                </div>
             </div>
             <div class='row row__ID'>
                <div class=col>
-                  <input id="password__ID" type="password" class="form-control" name="username" value="" placeholder="password">
+                  <input id="password__ID" type="password" class="form-control" name="password" value="" placeholder="password">
                </div>
             </div>
             <div class='row row__ID'>
@@ -41,6 +41,17 @@
          $('#vm_signout').hide();
          $('#vm_username').html('');
          $vm.user='';
+         var search=window.location.search
+ 		if(search.indexOf('username=')!=-1){
+ 			var txt=search.split('username=')[1];
+ 			var username=txt.split('&')[0];
+ 			$('#email__ID').val(username);
+ 		}
+ 		if(search.indexOf('password=')!=-1){
+ 			var txt=search.split('password=')[1];
+ 			var password=txt.split('&')[0];
+ 			$('#password__ID').val(password);
+ 		}
 
          var this_module		=$vm.module_list[$vm.vm['__ID'].name];
          var prefix				=this_module.prefix;  if(prefix==undefined) prefix="";
